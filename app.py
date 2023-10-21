@@ -14,7 +14,7 @@ tokenizer = AutoTokenizer.from_pretrained("alirezamsh/small100")
 
 st.title("Text Translation App")
 
-input_text = st.text_input("Enter the text to be translated:")
+input_text = st.text_input("Enter the text to be translated to English:")
 
 if input_text:
     translated_text = translate_text(input_text, 'en', tokenizer, model)
